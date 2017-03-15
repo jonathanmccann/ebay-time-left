@@ -1,0 +1,19 @@
+{
+	"manifest_version": 2,
+	"name": "eBay Time Left",
+	"version": "1.0",
+
+	"author": "Jonathan McCann",
+	"homepage_url": "https://github.com/jonathanmccann/ebay-time-left",
+
+	"description": "This Firefox addon will add the time left of the currently viewed eBay auction to the tab's title. No more missing auctions because you forgot the tab was open!",
+
+	"permissions": [
+		"tabs"
+	],
+
+	"content_scripts": [{
+		"matches": ["*://*.ebay.com/*"],
+		"js": ["timeLeft.js"]
+	}]
+}

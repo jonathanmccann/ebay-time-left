@@ -7,6 +7,6 @@ var getTimeLeft = function() {
 	document.title = timeLeft + " | " + documentTitle;
 }
 
-if ((timeLeftElement !== null) && (timeLeftElement.children.length == 0)) {
+if (timeLeftElement !== null) {
 	window.setInterval(getTimeLeft, 1000);
 }

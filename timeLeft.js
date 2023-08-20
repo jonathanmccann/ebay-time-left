@@ -10,5 +10,5 @@ if (timeLeftElement !== null) {
 	window.setInterval(getTimeLeft, 1000, timeLeftElement.innerHTML);
 }
 else if (timerTextElements[0] !== undefined){
-	window.setInterval(getTimeLeft, 1000, timerTextElements[0].innerText);
+	window.setInterval(getTimeLeft, 1000, timerTextElements[0].innerText.replace("Ends in ", ""));
 }
